@@ -1,0 +1,167 @@
+= MLA Style Guide and Template
+// Document header with title
+:doctype: article
+:author: Student Name
+:course: Course Name
+:professor: Professor Name
+:date: 13 November 2024
+:source-highlighter: rouge
+:toc: left
+:toclevels: 3
+:sectnums:
+
+// Basic document styling
+:pdf-theme: default
+:title-page:
+:page-margin: 1in
+
+// MLA requires double spacing
+:spacing: double
+
+== Introduction to MLA Format
+
+// This section explains basic MLA requirements
+[.lead]
+This document serves as both a style guide and template for MLA (Modern Language Association) formatted papers using AsciiDoc.
+
+=== Basic Format Requirements
+
+* 1-inch margins on all sides
+* Double-spaced text throughout
+* 12-point Times New Roman font (or similar serif font)
+* Header with last name and page number in top right corner
+* First-line indent of 0.5 inches for paragraphs
+
+== Header Formation
+
+// Header block for first page
+[.header]
+----
+Student Name
+Professor Name
+Course Name
+13 November 2024
+----
+
+== Title Formatting
+
+// Title should be centered, no special formatting
+[.title]
+= Paper Title
+
+== In-Text Citations
+
+=== Basic Citations
+[source]
+----
+According to Smith, "quoted text goes here" (234).
+// For a single author with page number
+
+(Smith and Jones 45)
+// For two authors
+
+(Smith et al. 67)
+// For three or more authors
+----
+
+=== Block Quotes
+// For quotes longer than 4 lines
+[quote, indent=0.5in]
+----
+This is an example of a block quote that extends beyond four lines. 
+Block quotes should be indented one inch from the left margin.
+The parenthetical citation comes after the final punctuation mark.
+----
+(Author 123)
+
+== Works Cited Page
+
+=== Basic Format
+[.works-cited]
+= Works Cited
+
+// Works cited entries should use hanging indent
+[source]
+----
+Author's Last Name, First Name. "Title of Article." Title of Container, 
+    contributors, version, number, publisher, publication date, location.
+----
+
+=== Sample Entries
+
+[source]
+----
+Smith, John. "Digital Humanities in the Modern Age." Journal of Digital 
+    Studies, vol. 12, no. 2, 2023, pp. 234-256.
+
+Brown, Sarah, and James Wilson. The Future of Technology. Random House, 
+    2022.
+
+Johnson, Mary, et al. "Artificial Intelligence Ethics." AI Quarterly, 
+    vol. 3, no. 4, 2024, pp. 45-67, doi:10.1234/aiq.2024.
+----
+
+== Tables and Figures
+
+// Table formatting example
+.Table Title
+|===
+|Column 1 |Column 2
+
+|Content
+|Content
+
+|Content
+|Content
+|===
+
+[caption]
+Figure 1: Tables should be labeled and cited appropriately in MLA format
+
+== Additional Formatting Guidelines
+
+=== Page Numbers
+// Header with automatic page numbering
+[header]
+Last Name {page-number}
+
+=== Section Headings
+// While not required by MLA, if used, they should be consistent
+[heading]
+==== Level 1 Heading
+===== Level 2 Heading
+
+=== Lists
+
+// Numbered lists
+. First item
+. Second item
+.. Subitem A
+.. Subitem B
+. Third item
+
+// Bullet lists
+* Main point
+** Supporting detail
+*** Additional detail
+
+== Common Mistakes to Avoid
+
+* Don't add extra spaces between paragraphs
+* Don't use title pages unless specifically requested
+* Don't underline titles (use italics instead)
+* Don't create abstract pages unless requested
+* Don't use running headers except for page numbers
+
+== Template Usage Instructions
+
+// Instructions for using this template
+[NOTE]
+====
+To use this template:
+
+1. Replace all placeholder text with your content
+2. Maintain consistent formatting throughout
+3. Generate final PDF using asciidoctor-pdf
+4. Verify all formatting meets MLA requirements
+====
